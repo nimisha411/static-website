@@ -1,2 +1,44 @@
 
-<h1>Hello AWS Live Website</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Static Website Deployment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My AWS Live Website</h1>
+        <p>Deployed using GitHub → CodePipeline → CodeBuild → S3</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Project Architecture</h2>
+            <ul>
+                <li>GitHub stores website code</li>
+                <li>AWS CodePipeline automates deployment</li>
+                <li>AWS CodeBuild prepares files</li>
+                <li>Amazon S3 hosts website</li>
+                <li>CloudFront improves speed and delivery</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Status</h2>
+            <p>Your static website is now live on AWS 🚀</p>
+        </section>
+
+        <button onclick="showMessage()">Click Me</button>
+        <p id="message"></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AWS Static Website Demo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
